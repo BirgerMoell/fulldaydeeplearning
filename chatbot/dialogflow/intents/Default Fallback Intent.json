@@ -1,0 +1,64 @@
+{
+  "id": "5054f77a-2e1f-43b2-8c0f-9aa29f075081",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "sv",
+          "condition": "",
+          "speech": [
+            "Jag hörde inte. Kan du säga det igen?",
+            "Jag hörde inte vad du sa. Kan du säga det igen?",
+            "Skulle du kunna säga det igen?",
+            "Ursäkta, kan du säga det igen?",
+            "Kan du säga det igen?",
+            "Jag hörde inte.",
+            "Jag hörde tyvärr inte.",
+            "Vad sa du?",
+            "Kan du upprepa det?",
+            "Va?",
+            "Jag hörde inte.",
+            "Jag uppfattade inte vad du sa."
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I didn\u0027t get that. Can you say it again?",
+            "I missed what you said. What was that?",
+            "Sorry, could you say that again?",
+            "Sorry, can you say that again?",
+            "Can you say that again?",
+            "Sorry, I didn\u0027t get that. Can you rephrase?",
+            "Sorry, what was that?",
+            "One more time?",
+            "What was that?",
+            "Say that one more time?",
+            "I didn\u0027t get that. Can you repeat?",
+            "I missed that, say that again?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

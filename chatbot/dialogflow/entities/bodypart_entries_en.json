@@ -1,0 +1,80 @@
+[
+  {
+    "value": "head",
+    "synonyms": [
+      "head"
+    ]
+  },
+  {
+    "value": "foot",
+    "synonyms": [
+      "foot"
+    ]
+  },
+  {
+    "value": "shoulder",
+    "synonyms": [
+      "shoulder"
+    ]
+  },
+  {
+    "value": "arm",
+    "synonyms": [
+      "arm"
+    ]
+  },
+  {
+    "value": "leg",
+    "synonyms": [
+      "leg"
+    ]
+  },
+  {
+    "value": "toe",
+    "synonyms": [
+      "toe"
+    ]
+  },
+  {
+    "value": "eye",
+    "synonyms": [
+      "eye"
+    ]
+  },
+  {
+    "value": "nose",
+    "synonyms": [
+      "nose"
+    ]
+  },
+  {
+    "value": "mouth",
+    "synonyms": [
+      "throut"
+    ]
+  },
+  {
+    "value": "lips",
+    "synonyms": [
+      "lips"
+    ]
+  },
+  {
+    "value": "teeth",
+    "synonyms": [
+      "teeth"
+    ]
+  },
+  {
+    "value": "gums",
+    "synonyms": [
+      "gums"
+    ]
+  },
+  {
+    "value": "knee",
+    "synonyms": [
+      "knee"
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "id": "2fec4cab-928d-4873-9c7f-2468207dacb4",
+  "name": "UpdateProfile",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "com.fulldaydeeplearing.SOME_INTENT",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "c304b0e2-d39a-4410-ac3f-8a95c9e0bc5f",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "Name",
+          "value": "$name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is your name?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "7aa15e4d-2806-4633-a5d5-6108ab845dd7",
+          "required": true,
+          "dataType": "@sys.color",
+          "name": "Color",
+          "value": "$color",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "How about your favourite color?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

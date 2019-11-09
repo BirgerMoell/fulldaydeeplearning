@@ -1,0 +1,47 @@
+[
+  {
+    "value": "sore",
+    "synonyms": [
+      "sore",
+      "pain"
+    ]
+  },
+  {
+    "value": "ache",
+    "synonyms": [
+      "ache"
+    ]
+  },
+  {
+    "value": "fever",
+    "synonyms": [
+      "fever"
+    ]
+  },
+  {
+    "value": "cough",
+    "synonyms": [
+      "cough"
+    ]
+  },
+  {
+    "value": "dizzy",
+    "synonyms": [
+      "dizzy"
+    ]
+  },
+  {
+    "value": "tired",
+    "synonyms": [
+      "tired"
+    ]
+  },
+  {
+    "value": "pain",
+    "synonyms": [
+      "pain",
+      "hurting",
+      "hurt"
+    ]
+  }
+]

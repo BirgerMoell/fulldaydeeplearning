@@ -1,0 +1,58 @@
+[
+  {
+    "id": "7b2ac746-5382-499a-866c-a674e110254b",
+    "data": [
+      {
+        "text": "My ",
+        "userDefined": false
+      },
+      {
+        "text": "foot",
+        "alias": "bodypart",
+        "meta": "@bodypart",
+        "userDefined": false
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "sore",
+        "alias": "symptom",
+        "meta": "@symptom",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8a02a380-f3ae-4324-8b57-af6a25f24f59",
+    "data": [
+      {
+        "text": "My ",
+        "userDefined": false
+      },
+      {
+        "text": "knee",
+        "alias": "bodypart",
+        "meta": "@bodypart",
+        "userDefined": false
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "hurting",
+        "alias": "symptom",
+        "meta": "@symptom",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]
