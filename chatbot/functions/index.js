@@ -14,13 +14,16 @@
 // Dialogflow fulfillment getting started guide:
 // https://dialogflow.com/docs/how-tos/getting-started-fulfillment
 
+// Kommunicate integration
+// https:// www.kommunicate.io/test?appId=10d244c3bd3b842e5f18068c11b6ccd16&botIds=fulldaybot-3ygcj&assignee=fulldaybot-3ygcj
+
 'use strict'
 
 const functions = require('firebase-functions')
 const { WebhookClient } = require('dialogflow-fulfillment')
 const { Card, Suggestion } = require('dialogflow-fulfillment')
 const cors = require('cors')({ origin: true })
-const greetings = ['Welcome to my firebase agent!', 'Welcome to our custom agent!']
+const greetings = ['Welcome to your own personal health bot, please tell me how you are feeling sick', 'Welcome to your own personal health bot, please tell me how you are feeling sick']
 
 process.env.DEBUG = 'dialogflow:debug' // enables lib debugging statements
 
@@ -46,9 +49,41 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       console.log('the symptom is symptom', symptom)
 
       if (bodypart && symptom) {
-        agent.add(`How long have you had ${symptom} in ${bodypart} ?`)
+        const response1 = `How long have you had a ${symptom} ${bodypart} ?`
+        const response2 = `How long have you had a ${symptom} in your ${bodypart} ?`
+        const healthRespones = [response1, response2]
+
+        // agent.add(`How long have you had a ${symptom} ${bodypart} ?`)
+        agent.add(getRandomPhrase(healthRespones))
       } else {
         agent.add('How long have you had these symptoms?')
+      }
+    }
+
+    const getSickTime = (agent) => {
+      const { duration } = result.parameters
+      console.log('duration is', duration)
+
+      if (duration) {
+        const { unit, amount } = duration
+        const response1 = `You been sick for ${duration}.`
+        const sickTimeResponses = [response1]
+
+        if (unit === 'wk') {
+          agent.add(`You been sick for more than ${amount} weeks`)
+          agent.add(`We would recommend you to see a doctor`)
+        } else if (unit === 'day') {
+          if (duration >= 3) {
+            agent.add(`You been sick for more than ${amount} days`)
+            agent.add(`You should think about going to see a doctor`)
+          } else {
+            agent.add(`Try taking an aspirin`)
+          }
+        }
+
+        // agent.add(getRandomPhrase(sickTimeResponses))
+      } else {
+        agent.add('You should see a doctor')
       }
     }
 
@@ -93,6 +128,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     intentMap.set('Default Welcome Intent', welcome)
     intentMap.set('Default Fallback Intent', fallback)
     intentMap.set('GetHealthTip', getHealthTip)
+    intentMap.set('GetSickTime', getSickTime)
     // intentMap.set('<INTENT_NAME_HERE>', googleAssistantHandler);
     agent.handleRequest(intentMap)
   })
