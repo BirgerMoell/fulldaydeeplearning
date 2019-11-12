@@ -15,6 +15,4 @@ RUN pip install -r requirements.txt
 # We copy our local directory to the docker container
 COPY . /app
 
-ENTRYPOINT [ "python" ]
-
-CMD [ "deployment.py" ]
+ENTRYPOINT [ "FLASK_APP=deployment.py flask run" ]
