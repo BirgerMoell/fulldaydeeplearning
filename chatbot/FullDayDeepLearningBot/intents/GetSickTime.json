@@ -1,32 +1,27 @@
 {
-  "id": "86b39fee-5f10-4b3d-8ede-8cd5cfc439d6",
-  "name": "GetHealthTip",
+  "id": "75f4bd53-f478-44c4-9f60-116382a4c191",
+  "name": "GetSickTime",
   "auto": true,
-  "contexts": [],
+  "contexts": [
+    "GetSickTime"
+  ],
   "responses": [
     {
       "resetContexts": false,
-      "action": "com.fulldaydeeplearning.GetBodyPartAndSymptom",
-      "affectedContexts": [],
+      "affectedContexts": [
+        {
+          "name": "GetSickTime",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
       "parameters": [
         {
-          "id": "92c18208-db69-40bc-93b2-7b28eca87016",
+          "id": "6d31012f-c8c6-4a16-a431-470c43daef08",
           "required": false,
-          "dataType": "@bodypart",
-          "name": "bodypart",
-          "value": "$bodypart",
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": [],
-          "isList": false
-        },
-        {
-          "id": "f4fbd114-1b80-4957-b23f-264e5cbd4ad4",
-          "required": false,
-          "dataType": "@symptom",
-          "name": "symptom",
-          "value": "$symptom",
+          "dataType": "@sys.duration",
+          "name": "duration",
+          "value": "$duration",
           "promptMessages": [],
           "noMatchPromptMessages": [],
           "noInputPromptMessages": [],

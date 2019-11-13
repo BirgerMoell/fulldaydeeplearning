@@ -39,9 +39,15 @@
   {
     "value": "pain",
     "synonyms": [
-      "pain",
+      "pain"
+    ]
+  },
+  {
+    "value": "hurt",
+    "synonyms": [
+      "hurt",
       "hurting",
-      "hurt"
+      "hurts"
     ]
   }
 ]
