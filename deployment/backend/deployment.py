@@ -22,3 +22,6 @@ def classify():
     text = request.json["text"]
     out = model.predict([text])[0]
     return jsonify(f"{out}")
+
+if __name__ == '__main__':
+    app.run(host = '0.0.0.0',port=5000)
