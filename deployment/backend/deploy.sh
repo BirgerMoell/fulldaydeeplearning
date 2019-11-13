@@ -1,5 +1,7 @@
 #!/bin/bash
 # Deploy to cloud run
+set -ex
+gcloud auth configure-docker
 APP_DOCKER_IMAGE=gcr.io/momentum-project/spam-classifier
 gcloud config set project momentum-project
 docker build -t $APP_DOCKER_IMAGE .

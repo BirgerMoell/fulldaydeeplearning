@@ -9,15 +9,15 @@ const Spam = () => {
   const checkForSpam = async () => {
     console.log('checking for spam with the text', text)
 
-    const url = 'http://localhost:5000/model'
+    const url = 'http://localhost:5000/api'
     let body = {
       text: text
     }
     const value = await postJson(url, body)
 
-    if (value === 0) {
+    if (value == 1) {
       setSpam('The text is spam')
-    } else if (value === 1) {
+    } else if (value == 0) {
       setSpam('The text is not spam')
     }
   }
