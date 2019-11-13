@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/fulldaydeeplearning/static/css/main.2c0588a6.chunk.css",
+    "main.js": "/fulldaydeeplearning/static/js/main.072a600a.chunk.js",
+    "main.js.map": "/fulldaydeeplearning/static/js/main.072a600a.chunk.js.map",
+    "runtime-main.js": "/fulldaydeeplearning/static/js/runtime-main.bd93a84f.js",
+    "runtime-main.js.map": "/fulldaydeeplearning/static/js/runtime-main.bd93a84f.js.map",
+    "static/js/2.05054e9c.chunk.js": "/fulldaydeeplearning/static/js/2.05054e9c.chunk.js",
+    "static/js/2.05054e9c.chunk.js.map": "/fulldaydeeplearning/static/js/2.05054e9c.chunk.js.map",
+    "index.html": "/fulldaydeeplearning/index.html",
+    "precache-manifest.8b727525157a6a95e7406d2b83905769.js": "/fulldaydeeplearning/precache-manifest.8b727525157a6a95e7406d2b83905769.js",
+    "service-worker.js": "/fulldaydeeplearning/service-worker.js",
+    "static/css/main.2c0588a6.chunk.css.map": "/fulldaydeeplearning/static/css/main.2c0588a6.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd93a84f.js",
+    "static/js/2.05054e9c.chunk.js",
+    "static/css/main.2c0588a6.chunk.css",
+    "static/js/main.072a600a.chunk.js"
+  ]
+}
