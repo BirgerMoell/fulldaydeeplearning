@@ -12,5 +12,8 @@ WORKDIR /app
 
 RUN pip3 install -r requirements.txt
 
+
 # We copy our local directory to the docker container
-COPY . /app
+COPY . ./
+
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 app:app

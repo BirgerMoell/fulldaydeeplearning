@@ -7,3 +7,4 @@ gcloud config set project momentum-project
 docker build -t $APP_DOCKER_IMAGE .
 docker push $APP_DOCKER_IMAGE
 gcloud beta run deploy fullday --project momentum-project --image $APP_DOCKER_IMAGE --region us-central1 --platform managed --memory 1024Mi
+echo 'Also go to the google cloud console "cloud run", click show info panel, and create a new "allUsers" member with "cloud run invoker" permissions'

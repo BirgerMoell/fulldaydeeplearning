@@ -3,6 +3,7 @@ from flask import jsonify, request
 from flask_cors import CORS
 
 from joblib import load
+import os
 
 app = flask.Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -23,5 +24,6 @@ def classify():
     out = model.predict([text])[0]
     return jsonify(f"{out}")
 
-if __name__ == '__main__':
-    app.run(host = '0.0.0.0',port=5000)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
