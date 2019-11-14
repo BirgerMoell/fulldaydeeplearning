@@ -10,14 +10,6 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 model = load("model.joblib")
 
 
-@app.route("/score/<path:text>")
-def hello(text):
-
-    out = model.predict([text])[0]
-
-    return f"{out}"
-
-
 @app.route("/api", methods=["POST"])
 def classify():
     text = request.json["text"]
