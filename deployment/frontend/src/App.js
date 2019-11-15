@@ -10,7 +10,7 @@ class App extends Component {
       <div className='App'>
         <Router>
           <div>
-            <Route exact path='/' component={Spam} />
+            <Route path='/' component={Spam} />
             <Route path='/spam' component={Spam} />
             <Route path='/chat' component={Chat} />
           </div>
